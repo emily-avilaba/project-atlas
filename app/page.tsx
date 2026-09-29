@@ -1,18 +1,24 @@
-import Navbar from "@/components/layout/Navbar";
+
+import Hero from "@/components/sections/Hero";
+import Worldwide from "@/components/sections/Worldwide";
+import PKFCA from "@/components/sections/PKFCA";
+import WhyPKF from "@/components/sections/WhyPKF";
+import Resources from "@/components/sections/Resources";
+import Services from "@/components/sections/Services";
+import Sectors from "@/components/sections/Sectors";
+import CTA from "@/components/sections/CTA";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#f4f2eb] text-slate-900">
-      <Navbar />
-
-      <section id="inicio" className="mx-auto max-w-[1320px] px-5 py-24 lg:px-8">
-        <h1 className="text-5xl font-semibold tracking-[-0.05em] text-[#0a2555]">
-          Project Atlas
-        </h1>
-        <p className="mt-6 text-lg text-slate-700">
-          Nueva web de PKF Guatemala.
-        </p>
-      </section>
+    <main className="min-h-screen bg-[#f4f2eb]">
+      <Hero />
+      <Worldwide />
+      <PKFCA />
+      <WhyPKF />
+      <Resources />
+      <Services />
+      <Sectors />
+      <CTA />
     </main>
   );
 }
